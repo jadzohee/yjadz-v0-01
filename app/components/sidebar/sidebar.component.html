@@ -1,6 +1,9 @@
-<mat-sidenav-container class="sidebar-container" *ngIf="shouldRun">
+<mat-sidenav-container class="sidebar-container" style="height: 100%;" *ngIf="shouldRun">
   <mat-sidenav #sidenav mode="push">
     <p><button mat-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button></p>
+    <p><button mat-button><mat-icon>chat</mat-icon></button></p>
+    <p><button mat-button><mat-icon>mic</mat-icon></button></p>
+    <p><button mat-button><mat-icon>music_video</mat-icon></button></p>
   </mat-sidenav>
   <mat-sidenav-content>
     <p><button mat-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
