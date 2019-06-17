@@ -1,7 +1,24 @@
 <mat-toolbar color="primary" layout="fill">
 	{{ title }}
 	<span class="fill-space"></span>
-  <a mat-raised-button color="accent" [href]="websiteUrl" target="_blank">
+  <a mat-raised-button color="accent" [href]="websiteUrl" (click)="signInWithGoogle()" target="_blank">
 		<mat-icon color="primary">person</mat-icon>
 	</a>
 </mat-toolbar>
+
+
+
+
+<div class="jumbotron bg-transparent text-center">
+  <div *ngIf="!user" class="card text-center">
+  <div *ngIf="user" class="card text-center">
+    <div class="card-block"></div>
+    <img class="card-img-top img-responsive photo" src="{{ user.photoUrl }}">
+    <div class="card-block">
+      <h4 class="card-title">{{ user.name }}</h4>
+    </div>
+    <div class="card-block">
+      <button class="btn btn-danger" (click)="signOut()">Sign out</button>
+    </div>
+  </div>
+</div>
