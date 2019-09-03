@@ -11,7 +11,7 @@ import { GoogleLoginProvider, FacebookLoginProvider, LinkedInLoginProvider } fro
 })
 export class HeaderComponent {
   // -----------------------------------------------------------------------//
-  private title = 'DisPlug';
+  private title = 'Kami Fujin';
   @Input() angularVersion: string = '';
   @Input() materialVersion: string = '';
   private websiteUrl: string = 'https://google.com/';  
