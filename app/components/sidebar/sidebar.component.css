@@ -13,6 +13,11 @@
   padding: 10px;
 }
 
+#navCont{
+ position:absolute;
+ bottom:0;                          
+}
+
 #cont1{
   margin: 1em;
 }
