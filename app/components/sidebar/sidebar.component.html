@@ -1,10 +1,9 @@
 <mat-sidenav-container class="sidebar-container" style="height: 100%;" *ngIf="shouldRun">
   <mat-sidenav #sidenav mode="push">
     <p><button mat-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button></p>
-    <p>
-      <button mat-button><mat-icon>chat</mat-icon></button></p>
+    <p><button mat-button><mat-icon>chat</mat-icon></button></p>
     <p><button mat-button><mat-icon>mic</mat-icon></button></p>
-    <p><button mat-button><mat-icon>music_video</mat-icon></button></p>
+    <p><button id="music" mat-button><mat-icon>music_video</mat-icon></button></p>
   </mat-sidenav>
   <mat-sidenav-content>
     <p><button mat-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
@@ -12,5 +11,16 @@
         Dark Theme
       </mat-slide-toggle>
     </p>
+    <div id="cont1">
+      <h1 id="contA1">Acceuil</h1>
+      <h3 id="contA2">Bonjour , et bienvenue sur le site de Kami Fujin ! 
+          <p>ici tu fait parti de l'ékip !
+          <p>Alors deja tu peux nous rejoindre sur discord via la bare de naviagetion qui y'a sur le tek-tek (le petit icon micro)
+          <p><p><p>
+          Bon si t'es la c'est que tu joue aux même jeux que nous :D 
+          <p>Mais peut etre que l'on à plus en commun que ce que tu crois ! (je parle de jeu calme toi !) zeubi.
+          Go t'check dans la partie Games :P           
+      </h3>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
