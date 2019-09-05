@@ -18,3 +18,11 @@ export class SidebarComponent {
     this._sharedDataService.OnThemeSwitch.next(event.checked);
   }
 }
+  function Divsplayer() {
+  var x = document.getElementById("cont1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
